@@ -11,6 +11,10 @@ body .main .posts article:hover {
   transform: translateY(-10px);
 }
 
+body .main .posts article:hover .feat-img img {
+  opacity: 0.7;
+}
+
 body .main .posts article .content {
   padding: 20px;
   color: #2d2d2d;
@@ -20,6 +24,10 @@ body .main .posts article .content h2 {
   font-size: 34px;
   line-height: 34px;
   margin: 10px 0;
+  min-height: 70px;
+}
+body .main .posts article .content p {
+  min-height: 115px;
 }
 
 body .main .posts article .content h2, body .main .posts article .content p {
