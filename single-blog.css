@@ -1,29 +1,101 @@
 /* CSS for single blog page */
 
-body .main .posts article {
-  box-shadow: 0 2px 5px rgba(150, 150, 150, 0.3);
-  transition: all ease 0.3s;
-}
-body .main .posts article:hover {
-  transform: translateY(-10px);
+.single-main .hero {
+  text-align: center;
+  min-height: 200px;
+  background-color: #2d2d2d;
+  padding: 5%;
+  background-image: url('img/blog-cherry-blossoms.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position:relative;
 }
 
-body .main .posts article .content {
-  padding: 20px;
-  color: #2d2d2d;
+.single-main .hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*background-color: rgba(45, 0, 84, 0.95);*/
+  background-color: rgba(19, 19, 19, 0.75);
+  opacity: 0.6;
+  z-index: 0;
 }
-body .main .posts article .content h2 {
-  font-size: 34px;
-  line-height: 34px;
-  margin: 10px 0;
+
+.single-main .hero .text-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
 }
-body .main .posts article .content h2, body .main .posts article .content p {
-  color: #2d2d2d;
+
+.single-main .single-wrapper {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  padding: 8% 5%;
+  grid-gap: 20px;
 }
-body .main .posts article .content h2, body .main .posts article .content p, body .main .posts article .content a {
-  text-decoration: none;
-} 
-body .main .posts article .feat-img img {
-  display: block;
+
+.single-main .single-wrapper article {
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.single-main .single-wrapper article figure {
+  text-align: center;
+}
+
+.single-main .single-wrapper article figure img {
   max-width: 100%;
 }
+
+.single-main article blockquote {
+  border-top: solid 1px #f5f5f5;
+  border-bottom: solid 1px #f5f5f5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.single-main article blockquote i {
+  font-size: 50px;
+  line-height:  50px;
+  color: #c9c9c9;
+}
+
+.single-main article blockquote h4 {
+  font-size: 30px;
+  color: #260638;
+}
+
+.single-main article .social-share {
+  padding-top: 2%;
+}
+
+.single-main article .social-share .nav-links ul li a i {
+  font-size: 24px;
+}
+
+.single-main aside {
+  background-color: #f7f7f7;
+  padding: 15px 30px;
+}
+
+.single-main aside img {
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .single-main .single-wrapper {
+    display: block;
+  }
+
+  .single-main aside {
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+

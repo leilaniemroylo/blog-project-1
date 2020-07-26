@@ -6,11 +6,13 @@ body nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 body nav .logo, body nav .nav-links {
   display: block;
   font-size: 0;
   padding: 5px 0 0 0;
 }
+
 body nav .logo a {
   font-size: 30px;
   line-height: 30px;
@@ -19,22 +21,27 @@ body nav .logo a {
   display: block;
   margin-top: 5px;
 }
+
 body nav .nav-links {
   text-align: right;
 }
-body nav .nav-links ul, footer .nav-links ul {
+
+body nav .nav-links ul, footer .nav-links ul, .single-main article .social-share ul {
   padding-left: 0;
   padding-top: 7px;
 }
-body nav .nav-links ul li, footer .nav-links ul li {
+
+body nav .nav-links ul li, footer .nav-links ul li, .single-main article .social-share ul li {
   display: inline;
   margin-left: 20px;
 }
+
 body nav .nav-links ul li a , body nav .nav-links ul li a i {
   font-size: 15px;
   color: #fff;
   text-decoration: none;;
 }
+
 body .main .posts {
   max-width: 100%;
   display: grid;
@@ -45,6 +52,15 @@ body .main .posts {
   padding: 8% 5%;
 }
 
-body .single-main {
-  display: grid;;
+@media screen and (max-width: 1000px) {
+  body .main .posts {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body .main .posts {
+    grid-template-columns:100%;
+    padding: 10% 5%;
+  }
 }
