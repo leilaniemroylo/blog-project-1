@@ -1,0 +1,84 @@
+/* CSS for personal blog */
+
+@charset "UTF-8";
+@import "./layout.css";
+@import "./blog-cards.css";
+
+/* FONTS
+font-family: gaultier, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-family: gaultier-lights, sans-serif;
+font-weight: 400;
+font-style: normal;
+*/
+
+html, body {
+  font-family: gaultier, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  max-width: 100%;
+}
+body p {
+  font-family: gaultier-lights, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+body a {
+  color: #550bb0;
+}
+
+h1, h2, h3, h4 {
+  font-family: gaultier, sans-serif;
+  font-weight: 500;
+  margin: 20px 0;
+}
+h1 {
+  font-size: 70px;
+  line-height: 72px;
+}
+h2 {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+
+body .main .hero {
+  text-align: center;
+  min-height: 200px;
+  background-color: #f5f5f5;
+  padding: 5%;
+  /*
+  background-image: url('img/blog-iceland.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  */
+}
+body .main #contact, .single-main .post-navigation {
+  background-color: #260638;
+  color: #fff;
+  text-align:center;
+  padding: 5%;
+}
+body .main #contact a {  
+  color: #fff;
+  border: solid 2px #fff;
+  padding: 12px 30px;
+  font-size: 18px;
+  line-height: 18px;
+  margin: 20px auto;
+  text-decoration: none;
+  display: block;
+  max-width: 150px;
+}
+footer {
+  background-color: #f5f5f5;
+  color: #2d2d2d;
+  text-align:center;
+  padding: 15px;
+}
+footer p, footer ul {
+  margin: 0;
+}

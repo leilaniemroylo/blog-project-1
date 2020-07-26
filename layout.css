@@ -1,0 +1,50 @@
+/* CSS for layout */
+
+body nav {
+  padding: 10px 20px;
+  background-color: #2d2d2d;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+body nav .logo, body nav .nav-links {
+  display: block;
+  font-size: 0;
+  padding: 5px 0 0 0;
+}
+body nav .logo a {
+  font-size: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin-top: 5px;
+}
+body nav .nav-links {
+  text-align: right;
+}
+body nav .nav-links ul, footer .nav-links ul {
+  padding-left: 0;
+  padding-top: 7px;
+}
+body nav .nav-links ul li, footer .nav-links ul li {
+  display: inline;
+  margin-left: 20px;
+}
+body nav .nav-links ul li a , body nav .nav-links ul li a i {
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;;
+}
+body .main .posts {
+  max-width: 100%;
+  display: grid;
+  /*grid-template-columns: 33% 33% 33%;*/
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 20px;
+  padding: 8% 5%;
+}
+
+body .single-main {
+  display: grid;;
+}

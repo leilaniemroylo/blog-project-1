@@ -1,0 +1,29 @@
+/* CSS for blog cards */
+
+body .main .posts article {
+  box-shadow: 0 2px 5px rgba(150, 150, 150, 0.3);
+  transition: all ease 0.3s;
+}
+body .main .posts article:hover {
+  transform: translateY(-10px);
+}
+
+body .main .posts article .content {
+  padding: 20px;
+  color: #2d2d2d;
+}
+body .main .posts article .content h2 {
+  font-size: 34px;
+  line-height: 34px;
+  margin: 10px 0;
+}
+body .main .posts article .content h2, body .main .posts article .content p {
+  color: #2d2d2d;
+}
+body .main .posts article .content h2, body .main .posts article .content p, body .main .posts article .content a {
+  text-decoration: none;
+} 
+body .main .posts article .feat-img img {
+  display: block;
+  max-width: 100%;
+}
