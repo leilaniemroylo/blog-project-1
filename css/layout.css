@@ -64,3 +64,13 @@ body .main .posts {
     padding: 10% 5%;
   }
 }
+
+@media screen and (max-width: 450px) {
+  body nav {
+    display: block;
+  }
+  
+  body nav .logo a, body nav .nav-links {
+    text-align: center;
+  }
+}

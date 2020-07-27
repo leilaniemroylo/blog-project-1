@@ -11,6 +11,10 @@ body .main .posts article:hover {
   transform: translateY(-10px);
 }
 
+body .main .posts article > a {
+  text-decoration: none;
+}
+
 body .main .posts article:hover .feat-img img {
   opacity: 0.7;
 }
@@ -42,3 +46,5 @@ body .main .posts article .feat-img img {
   display: block;
   max-width: 100%;
 }
+
+

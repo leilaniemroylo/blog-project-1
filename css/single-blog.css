@@ -5,7 +5,7 @@
   min-height: 200px;
   background-color: #2d2d2d;
   padding: 5%;
-  background-image: url('img/blog-cherry-blossoms.jpg');
+  background-image: url('/img/blog-cherry-blossoms.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;

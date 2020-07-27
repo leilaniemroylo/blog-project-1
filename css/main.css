@@ -21,7 +21,7 @@ html, body {
   max-width: 100%;
 }
 
-body p {
+body p, button {
   font-family: gaultier-lights, sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -30,6 +30,16 @@ body p {
 
 body a {
   color: #550bb0;
+  text-decoration: underline;
+}
+
+body button {
+  color: #fff;  
+  background: #550bb0;;
+  border: none;
+  cursor: pointer;
+  padding: 8px 15px;
+  margin-bottom: 20px;
 }
 
 h1, h2, h3, h4 {
@@ -73,9 +83,10 @@ body .main #contact {
   padding: 5%;
 }
 
-body .main #contact a {  
+body .main #contact button {  
   color: #fff;
   border: solid 2px #fff;
+  background-color: transparent;
   padding: 12px 30px;
   font-size: 18px;
   line-height: 18px;
@@ -83,6 +94,10 @@ body .main #contact a {
   text-decoration: none;
   display: block;
   max-width: 150px;
+}
+
+body .main #contact button a {
+  color: #fff;
 }
 
 footer {
